@@ -1,0 +1,282 @@
+.bg {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg.png);
+    background-size: 100%;
+    background-color: rgb(184, 229, 248);
+}
+
+img.logo {
+    display: block;
+    width: 128px;
+    height: 81px;
+    margin: 0px auto 24px;
+    padding-top: 40px;
+}
+
+.login-box {
+    width: 352px;
+    padding: 0 24px;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+    background-color: #fff;
+}
+
+.login-box .login-method span {
+    display: inline-block;
+    height: 60px;
+    margin-right: 24px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.login-box .login-method span.selected {
+    border-bottom: 3px solid #0084ff;
+}
+
+.login-box form {
+    width: 352px;
+    margin-top: 24px;
+}
+
+.login-box .form-1 {
+    display: block;
+}
+
+.login-box .form-2 {
+    display: none;
+}
+
+.login-box form .number,
+.login-box form .pass {
+    height: 48px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.login-box form .number input,
+.login-box form .pass input {
+    height: 48px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: rgb(133, 144, 166);
+}
+
+.login-box form .pass .iconfont {
+    float: right;
+    line-height: 48px;
+    font-size: 22px;
+    color: rgb(133, 144, 166);
+}
+
+.login-box form .options {
+    margin-top: 12px;
+}
+
+.login-box form .options button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 14px;
+    color: rgb(133, 144, 166);
+    cursor: pointer;
+}
+
+.login-box form .options .fl {
+    color: #175199;
+}
+
+.login-box form .number .seperate {
+    display: inline-block;
+    margin: 0 12px;
+    width: 2px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-color: #ebebeb;
+}
+
+.login-box form .number input::-webkit-outer-spin-button,
+.login-box form .number input::-webkit-inner-spin-button,
+.login-box form .pass input::-webkit-outer-spin-button,
+.login-box form .pass input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.login-box form .number button,
+.login-box form .pass button {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fff;
+    color: #76839b;
+    line-height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-box form .pass button {
+    color: #175199;
+}
+
+.login-box form .number button .iconfont {
+    font-size: 12px;
+    color: #76839b;
+}
+
+.login-box form .phonecall {
+    margin-top: 12px;
+    width: 352px;
+}
+
+.login-box form .phonecall button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #76839b;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-box form .submit {
+    width: 348px;
+    height: 34px;
+    padding: 0 16px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    border: 1px solid #0084ff;
+    border-radius: 3px;
+    background-color: #0084ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-box .statement {
+    margin-top: 12px;
+}
+
+.login-box .statement p,
+.login-box .statement p a {
+    font-size: 13px;
+    color: gray;
+}
+
+.login-box .line {
+    display: inline-block;
+    width: 352px;
+    height: 2px;
+    background-color: #ebebeb;
+}
+
+.login-box .other-method {
+    height: 60px;
+    line-height: 60px;
+    color: #76839b;
+}
+
+.login-box .apps li {
+    float: left;
+    margin-left: 15px;
+}
+
+.login-box .apps li .iconfont {
+    font-size: 18px;
+}
+
+.login-box .apps li .wechat {
+    color: rgb(96, 200, 77);
+}
+
+.login-box .apps li .qq {
+    color: rgb(80, 200, 253);
+}
+
+.login-box .apps li .weibo {
+    color: rgb(251, 102, 34);
+}
+
+.func {
+    width: 352px;
+    height: 60px;
+    margin: 0 auto 50px;
+    padding: 0 24px;
+    line-height: 60px;
+    border-radius: 0 0 5px 5px;
+    background-color: rgb(246, 246, 246);
+    color: #0084ff;
+}
+
+.func a {
+    color: #0084ff;
+}
+
+.func .iconfont {
+    font-size: 20px;
+    color: #0084ff;
+}
+
+.func img {
+    width: 20px;
+    vertical-align: text-bottom;
+}
+
+.footer {
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    display: table;
+    margin: 5px auto;
+    font-size: 0;
+}
+
+.footer ul li {
+    float: left;
+    margin: 0 3px;
+}
+
+.footer ul li span,
+.footer ul li a {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.footer ul li img {
+    width: 18px;
+    vertical-align: text-bottom;
+}
+
+.login-box form .number {
+    position: relative;
+}
+
+.Select-list {
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 500px;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, .3);
+}
+
+.Select-list li {
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-box form .number .Select-list li button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    color: #8590a6;
+    text-align: left;
+}
+
+.Select-list li:hover,
+.Select-list li:hover button {
+    background-color: rgb(246, 246, 246);
+}

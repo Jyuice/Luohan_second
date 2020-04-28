@@ -2,6 +2,15 @@ body {
     background-color: #f6f6f6;
 }
 
+
+/* 头部信息 */
+
+#home-page {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 #head {
     width: 100%;
     height: 52px;
@@ -21,7 +30,7 @@ body {
 
 #head .container,
 #head .swap {
-    width: 1050px;
+    width: 1000px;
     height: 52px;
     margin: 0 auto;
     background-color: #fff;
@@ -78,7 +87,7 @@ body {
     color: #0084ff;
 }
 
-#head img {
+#head img.sulpture {
     width: 30px;
     border-radius: 3px;
     margin-top: 11px;
@@ -104,7 +113,7 @@ body {
 
 #head .container .search-box form input {
     display: inline-block;
-    width: 282px;
+    width: 265px;
     height: 32px;
     padding-left: 10px;
     margin-left: 50px;
@@ -186,6 +195,106 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
+
+
+/* 好友列表 */
+
+#head .friends-box {
+    position: fixed;
+    display: none;
+    z-index: 10000;
+    top: 54px;
+    right: 30px;
+    width: 360px;
+    height: 439px;
+    background-color: #fff;
+    border: rgb(246, 246, 246);
+    box-shadow: 4px 2px 8px 2px rgb(0, 0, 0, .1);
+    font-size: 14px;
+}
+
+#head .friends-box .trangle {
+    position: absolute;
+    right: 180px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
+#head .friends-box .friends-list .list-head {
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+#head .friends-box .friends-list .list-head:hover {
+    color: rgb(133, 144, 166);
+}
+
+#head .friends-box .friends-list .list {
+    width: 360px;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#head .friends-box .friends-list .list li {
+    width: 313px;
+    height: 43.333px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#head .friends-box .friends-list .list li:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+#head .friends-box .friends-list .list li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#head .friends-box .friends-list .list li .content {
+    display: inline-block;
+    width: 253.18px;
+}
+
+#head .friends-box .friends-list .list li .content .message {
+    width: 100%;
+    height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* 限制在一个块元素显示的文本的行数 */
+    -webkit-box-orient: vertical;
+    /* 垂直排列 */
+    word-break: break-all;
+    /* 内容自动换行 */
+    color: rgb(133, 144, 166);
+}
+
+#head .friends-box .friends-list .list-foot {
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    color: rgb(133, 144, 166);
+    border-top: 1px solid rgb(245, 245, 245);
+    cursor: pointer;
+}
+
+#head .friends-box .friends-list .list-foot:hover {
+    color: rgb(143, 154, 173);
+}
+
+
+/* 内容区域 */
 
 #content {
     width: 1000px;
@@ -387,7 +496,7 @@ body {
 }
 
 #content #nav .creator .creator-profile .profile-item i {
-    color: rgb(255, 51, 102);
+    color: rgb(0, 132, 255);
     font-size: 12px;
 }
 
@@ -566,4 +675,183 @@ body {
 
 #content #nav .copyright li a:hover {
     color: rgb(23, 117, 192);
+}
+
+
+/* 聊天框 */
+
+#chat-area {
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#chat-area .chat-box {
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 728px;
+    background-color: #fff;
+}
+
+#chat-area .chat-box .chat-top {
+    width: 690px;
+    padding: 21px 0 9px;
+    margin: 0 19px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    text-align: center;
+}
+
+#chat-area .chat-box .chat-top .close {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+    color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+#chat-area .chat-box .chat-body {
+    height: 366px;
+    overflow-y: scroll;
+}
+
+#chat-area .chat-box .chat-body .send,
+#chat-area .chat-box .chat-body .receive {
+    width: 100%;
+}
+
+#chat-area .chat-box .chat-body .time {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 0;
+}
+
+#chat-area .chat-box .chat-body .time span {
+    font-size: 12px;
+}
+
+#chat-area .chat-box .chat-body .receive .not-my-header {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#chat-area .chat-box .chat-body .send .my-header {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#chat-area .chat-box .chat-body .chat-message {
+    margin: 10px 20px;
+}
+
+#chat-area .chat-box .chat-body .receive .inter::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: -4px;
+    top: 14px;
+    transform: rotate(45deg);
+    background: #f6f6f6;
+}
+
+#chat-area .chat-box .chat-body .send .inter::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: -4px;
+    top: 14px;
+    transform: rotate(45deg);
+    background: #f6f6f6;
+}
+
+#chat-area .chat-box .chat-body .receive .inter {
+    position: relative;
+    float: left;
+    max-width: 364px;
+    padding: 10px 12px;
+    margin: 0 8px;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 246);
+    font-size: 14px;
+    color: #444;
+}
+
+#chat-area .chat-box .chat-body .send .inter {
+    position: relative;
+    float: right;
+    max-width: 364px;
+    padding: 10px 12px;
+    margin: 0 8px;
+    border-radius: 5px;
+    background-color: rgb(246, 246, 246);
+    font-size: 14px;
+    color: #444;
+}
+
+#chat-area .chat-box .text-area .func {
+    width: 690px;
+    height: 31px;
+    padding-top: 11px;
+    margin: 0 14px;
+    border-top: 1px solid rgb(235, 235, 235);
+}
+
+#chat-area .chat-box .text-area .func img {
+    width: 39.3px;
+    height: 30px;
+}
+
+#chat-area .chat-box .text-area label {
+    display: inline-block;
+    height: 76.5px;
+    width: 704px;
+    padding: 0 10px 4px 14px;
+    background-color: #fff;
+}
+
+#chat-area .chat-box .text-area label #txt {
+    width: 694px;
+    height: 60px;
+    margin-top: 10px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+#chat-area .chat-box .submit {
+    width: 678px;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+    text-align: right;
+    line-height: 60px;
+}
+
+#chat-area .chat-box .submit span {
+    margin-right: 10px;
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+#chat-area .chat-box .submit input {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #0084ff;
+    background-color: #0084ff;
+    color: #fff;
+    opacity: .5;
 }

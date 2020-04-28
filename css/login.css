@@ -196,7 +196,7 @@ img.logo {
     color: rgb(251, 102, 34);
 }
 
-.func {
+#login-page .func {
     width: 352px;
     height: 60px;
     margin: 0 auto 50px;
@@ -207,48 +207,48 @@ img.logo {
     color: #0084ff;
 }
 
-.func a {
+#login-page .func a {
     color: #0084ff;
 }
 
-.func .iconfont {
+#login-page .func .iconfont {
     font-size: 20px;
     color: #0084ff;
 }
 
-.func img {
+#login-page .func img {
     width: 20px;
     vertical-align: text-bottom;
 }
 
-.footer {
+#login-page .footer {
     margin-bottom: 20px;
 }
 
-.footer ul {
+#login-page .footer ul {
     display: table;
     margin: 5px auto;
     font-size: 0;
 }
 
-.footer ul li {
+#login-page .footer ul li {
     float: left;
     margin: 0 3px;
 }
 
-.footer ul li span,
-.footer ul li a {
+#login-page .footer ul li span,
+#login-page .footer ul li a {
     font-size: 12px;
     color: #fff;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
 }
 
-.footer ul li img {
+#login-page .footer ul li img {
     width: 18px;
     vertical-align: text-bottom;
 }
 
-.login-box form .number {
+#login-page .login-box form .number {
     position: relative;
 }
 
@@ -267,7 +267,7 @@ img.logo {
     cursor: pointer;
 }
 
-.login-box form .number .Select-list li button {
+#login-page .login-box form .number .Select-list li button {
     width: 100%;
     outline: none;
     border: none;

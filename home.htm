@@ -10,285 +10,410 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
-<body>
-    <div id="head">
-        <div class="replace">
-            <div class="container clearfix">
-                <ul class="fl">
-                    <li>
-                        <i class="iconfont logo">&#xe510;</i>
-                    </li>
-                    <li>
-                        <span class="selected">首页</span>
-                    </li>
-                    <li>
-                        <span>发现</span>
-                    </li>
-                    <li>
-                        <span>等你来答</span>
-                    </li>
-                </ul>
-                <ul class="fr">
-                    <li>
-                        <i class="iconfont">&#xe845;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont">&#xe62e;</i>
-                    </li>
-                    <li style="margin: 0;">
-                        <img src="img/head sulpture.jpg" alt="">
-                    </li>
-                </ul>
-                <div class="search-box">
-                    <form action="#">
-                        <input type="text">
-                        <button type="submit" class="submit">
+<body id="scroll">
+    <div id="home-page">
+        <div id="head">
+            <div class="replace">
+                <div class="container clearfix">
+                    <ul class="fl">
+                        <li>
+                            <i class="iconfont logo">&#xe510;</i>
+                        </li>
+                        <li>
+                            <span class="selected">首页</span>
+                        </li>
+                        <li>
+                            <span>发现</span>
+                        </li>
+                        <li>
+                            <span>等你来答</span>
+                        </li>
+                    </ul>
+                    <ul class="fr">
+                        <li>
+                            <i class="iconfont" id="alert">&#xe845;</i>
+                        </li>
+                        <li>
+                            <i class="iconfont" id="message">&#xe62e;</i>
+                        </li>
+                        <li style="margin: 0;">
+                            <img src="img/head sulpture.jpg" alt="" class="sulpture">
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit" class="submit">
                             <i class="iconfont">&#xe61c;</i>
                     </button>
-                        <div class="ques">提问</div>
-                    </form>
+                            <div class="ques">提问</div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="swap clearfix">
-                <ul class="fl">
-                    <li>
-                        <a href="https://www.zhihu.com/">
-                            <i class="iconfont logo">&#xe510;</i>
-                        </a>
-                    </li>
-                    <li>
-                        <span class="selected">推荐</span>
-                    </li>
-                    <li>
-                        <span>关注</span>
-                    </li>
-                    <li>
-                        <span>热榜</span>
-                    </li>
-                </ul>
-                <div class="fr">
-                    <form action="#">
-                        <input type="text">
-                        <button type="submit" class="submit">
+                <div class="swap clearfix">
+                    <ul class="fl">
+                        <li>
+                            <a href="https://www.zhihu.com/">
+                                <i class="iconfont logo">&#xe510;</i>
+                            </a>
+                        </li>
+                        <li>
+                            <span class="selected">推荐</span>
+                        </li>
+                        <li>
+                            <span>关注</span>
+                        </li>
+                        <li>
+                            <span>热榜</span>
+                        </li>
+                    </ul>
+                    <div class="fr">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit" class="submit">
                             <i class="iconfont">&#xe61c;</i>
                         </button>
-                        <div class="ques">提问</div>
-                    </form>
+                            <div class="ques">提问</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- 好友列表 -->
+            <div class="friends-box">
+                <div class="trangle"></div>
+                <div class="friends-list">
+                    <div class="list-head">我的私信</div>
+                    <ul class="list">
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/friend-header.jpg" alt="" class="header">
+                            <div class="content">
+                                <div class="friend-name">知乎小伙伴</div>
+                                <div class="message">
+                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-foot clearfix">
+                        <li class="fl">
+                            <i class="iconfont">&#xe50a;</i>
+                            <span>写新私信</span>
+                        </li>
+                        <li class="fr">
+                            <span>查看全部私信</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="content" class="clearfix">
-        <div id="app" class="fl">
-            <div class="ad fl">
-                <img src="img/head-ad.jpg" alt="">
+        <div id="content" class="clearfix">
+            <div id="app" class="fl">
+                <div class="ad fl">
+                    <img src="img/head-ad.jpg" alt="">
+                </div>
+
+                <div class="info clearfix">
+                    <ul class="sort clearfix">
+                        <li class="selected">推荐</li>
+                        <li>关注</li>
+                        <li>热榜</li>
+                    </ul>
+                    <div class="article">
+
+                    </div>
+                </div>
             </div>
-
-            <div class="info clearfix">
-                <ul class="sort clearfix">
-                    <li class="selected">推荐</li>
-                    <li>关注</li>
-                    <li>热榜</li>
+            <div id="nav" class="fr">
+                <div class="func">
+                    <div class="nav-top">
+                        <a href="">
+                            <div class="circle blu">
+                                <i class="iconfont">&#xe656;</i>
+                            </div>
+                            <div>回答问题</div>
+                        </a>
+                        <a href="">
+                            <div class="circle ora">
+                                <i class="iconfont">&#xe505;</i>
+                            </div>
+                            <div>发视频</div>
+                        </a>
+                        <a href="">
+                            <div class="circle yel">
+                                <i class="iconfont">&#xe624;</i>
+                            </div>
+                            <div>写文章</div>
+                        </a>
+                        <a href="">
+                            <div class="circle gre">
+                                <i class="iconfont">&#xe638;</i>
+                            </div>
+                            <div>写想法</div>
+                        </a>
+                    </div>
+                    <div class="nav-wrapp">
+                        <a href="" class="line-right">
+                            <span class="nav-wrapp-title">稍后答</span>
+                            <span class="nav-wrapp-number">1</span>
+                        </a>
+                        <a href="">
+                            <span class="nav-wrapp-title">草稿箱</span>
+                            <span class="nav-wrapp-number">1</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="creator">
+                    <div class="creator-title clearfix">
+                        <i class="iconfont writer">&#xe648;</i>
+                        <span>创作者中心</span>
+                        <span class="level">Lv 1</span>
+                        <i class="iconfont fr">&#xe504;</i>
+                    </div>
+                    <div class="creator-profile">
+                        <div class="profile-item line-right">
+                            <div class="profile-title">昨天被阅读数</div>
+                            <div class="profile-number">7</div>
+                            <div class="profile-increase">
+                                较前日
+                                <i class="iconfont">&#xe530;</i>
+                                <span>16.67%</span>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-title">昨日获赞同数</div>
+                            <div class="profile-number">0</div>
+                            <div class="profile-increase">较前日 --</div>
+                        </div>
+                    </div>
+                    <a href="https://www.zhihu.com/creator/explore/wall-e" class="creator-protection">
+                        <span>瓦力保镖为你的创作提供持续保护</span>
+                        <i class="iconfont">&#xec4d;</i>
+                    </a>
+                </div>
+                <div class="category">
+                    <img src="img/ad.png" alt="">
+                    <div class="category-list">
+                        <a href="">
+                            <i class="iconfont yel">&#xe669;</i>
+                            <div>Live</div>
+                        </a>
+                        <a href="">
+                            <i class="iconfont gre">&#xe61d;</i>
+                            <div>书店</div>
+                        </a>
+                        <a href="">
+                            <i class="iconfont b1">&#xe65d;</i>
+                            <div>圆桌</div>
+                        </a>
+                        <a href="">
+                            <i class="iconfont b2">&#xe50a;</i>
+                            <div>专栏</div>
+                        </a>
+                        <a href="">
+                            <i class="iconfont b3">&#xe578;</i>
+                            <div>付费咨询</div>
+                        </a>
+                        <a href="">
+                            <i class="iconfont b4">&#xe699;</i>
+                            <div>百科</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="ad">
+                    <img src="img/ad.jpg" alt="">
+                    <span class="close">×</span>
+                    <div>广告</div>
+                </div>
+                <div class="nav-link">
+                    <a href="" class="clearfix">
+                        <i class="iconfont">&#xe671;</i>
+                        <span>我的收藏</span>
+                        <span class="nav-link-number">0</span>
+                    </a>
+                    <a href="" class="clearfix">
+                        <i class="iconfont">&#xe633;</i>
+                        <span>我关注的问题</span>
+                        <span class="nav-link-number">12</span>
+                    </a>
+                    <a href="" class="clearfix">
+                        <i class="iconfont">&#xe709;</i>
+                        <span>我的邀请</span>
+                        <span class="nav-link-number">233</span>
+                    </a>
+                    <a href="">
+                        <i class="iconfont">&#xe729;</i>
+                        <span>我的余额</span>
+                    </a>
+                    <a href="">
+                        <i class="iconfont">&#xe628;</i>
+                        <span>站务中心</span>
+                    </a>
+                    <a href="">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>帮助中心</span>
+                    </a>
+                    <a href="">
+                        <i class="iconfont">&#xe674;</i>
+                        <span>版权服务中心</span>
+                    </a>
+                </div>
+                <div class="ad">
+                    <img src="img/ad1.jpg" alt="">
+                    <span class="close">×</span>
+                    <div>广告</div>
+                </div>
+                <ul class="copyright">
+                    <li>
+                        <a href="">刘看山</a>
+                        <span>·</span>
+                        <a href="">知乎指南</a>
+                        <span>·</span>
+                        <a href="">知乎协议</a>
+                        <span>·</span>
+                    </li>
+                    <li>
+                        <a href="">知乎隐私保护指引</a>
+                    </li>
+                    <li>
+                        <a href="">应用</a>
+                        <span>·</span>
+                        <a href="">工作</a>
+                        <span>·</span>
+                        <a href="">申请开通知乎机构号</a>
+                    </li>
+                    <li>
+                        <a href="">侵权举报网上有害信息</a>
+                        <span>·</span>
+                        <a href="">举报专区</a>
+                    </li>
+                    <li>
+                        <a href="">京 ICP 证 110745 号</a>
+                    </li>
+                    <li>
+                        <a href="">京 ICP 备 13052560 号 - 1</a>
+                    </li>
+                    <li>
+                        <img src="img/rightcopy.png" alt="">
+                        <a href="">京公网安备 11010802010035 号</a>
+                    </li>
+                    <li>
+                        <div>互联网药品信息服务资格证书</div>
+                    </li>
+                    <li>
+                        <div>（京）- 非经营性 - 2017 - 0067</div>
+                    </li>
+                    <li>
+                        <div>违法和不良信息举报：010-82716601</div>
+                    </li>
+                    <li>
+                        <a href="">儿童色情信息举报专区</a>
+                    </li>
+                    <li>
+                        <a href="">证照中心</a>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                        <div> © 2020 知乎</div>
+                    </li>
                 </ul>
-                <div class="article">
-
-                </div>
             </div>
         </div>
-        <div id="nav" class="fr">
-            <div class="func">
-                <div class="nav-top">
-                    <a href="">
-                        <div class="circle blu">
-                            <i class="iconfont">&#xe656;</i>
-                        </div>
-                        <div>回答问题</div>
-                    </a>
-                    <a href="">
-                        <div class="circle ora">
-                            <i class="iconfont">&#xe505;</i>
-                        </div>
-                        <div>发视频</div>
-                    </a>
-                    <a href="">
-                        <div class="circle yel">
-                            <i class="iconfont">&#xe624;</i>
-                        </div>
-                        <div>写文章</div>
-                    </a>
-                    <a href="">
-                        <div class="circle gre">
-                            <i class="iconfont">&#xe638;</i>
-                        </div>
-                        <div>写想法</div>
-                    </a>
+
+        <!-- 聊天框 -->
+        <div id="chat-area">
+            <div class="chat-box">
+                <div class="chat-top clearfix">
+                    <span class="name">知乎小伙伴</span>
+                    <span class="close">×</span>
                 </div>
-                <div class="nav-wrapp">
-                    <a href="" class="line-right">
-                        <span class="nav-wrapp-title">稍后答</span>
-                        <span class="nav-wrapp-number">1</span>
-                    </a>
-                    <a href="">
-                        <span class="nav-wrapp-title">草稿箱</span>
-                        <span class="nav-wrapp-number">1</span>
-                    </a>
-                </div>
-            </div>
-            <div class="creator">
-                <div class="creator-title clearfix">
-                    <i class="iconfont writer">&#xe648;</i>
-                    <span>创作者中心</span>
-                    <span class="level">Lv 1</span>
-                    <i class="iconfont fr">&#xe504;</i>
-                </div>
-                <div class="creator-profile">
-                    <div class="profile-item line-right">
-                        <div class="profile-title">昨天被阅读数</div>
-                        <div class="profile-number">3</div>
-                        <div class="profile-increase">
-                            较前日
-                            <i class="iconfont">&#xe530;</i>
-                            <span>40%</span>
+                <div class="chat-body">
+                    <div class="receive clearfix">
+                        <div class="time">
+                            <span class="hour">18</span>
+                            <span>:</span>
+                            <span class="minute">24</span>
+                        </div>
+                        <div class="chat-message clearfix">
+                            <img src="img/friend-header.jpg" alt="" class="not-my-header">
+                            <div class="inter">
+                                亲爱的 拾柒：<br><br> 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                            </div>
                         </div>
                     </div>
-                    <div class="profile-item">
-                        <div class="profile-title">昨日获赞同数</div>
-                        <div class="profile-number">0</div>
-                        <div class="profile-increase">较前日 --</div>
+                    <div class="send clearfix">
+                        <div class="time">
+                            <span class="hour">18</span>
+                            <span>:</span>
+                            <span class="minute">26</span>
+                        </div>
+                        <div class="chat-message clearfix">
+                            <img src="img/head sulpture.jpg" alt="" class="my-header">
+                            <div class="inter">
+                                你好
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a href="https://www.zhihu.com/creator/explore/wall-e" class="creator-protection">
-                    <span>瓦力保镖为你的创作提供持续保护</span>
-                    <i class="iconfont">&#xec4d;</i>
-                </a>
-            </div>
-            <div class="category">
-                <img src="img/ad.png" alt="">
-                <div class="category-list">
-                    <a href="">
-                        <i class="iconfont yel">&#xe669;</i>
-                        <div>Live</div>
-                    </a>
-                    <a href="">
-                        <i class="iconfont gre">&#xe61d;</i>
-                        <div>书店</div>
-                    </a>
-                    <a href="">
-                        <i class="iconfont b1">&#xe65d;</i>
-                        <div>圆桌</div>
-                    </a>
-                    <a href="">
-                        <i class="iconfont b2">&#xe50a;</i>
-                        <div>专栏</div>
-                    </a>
-                    <a href="">
-                        <i class="iconfont b3">&#xe578;</i>
-                        <div>付费咨询</div>
-                    </a>
-                    <a href="">
-                        <i class="iconfont b4">&#xe699;</i>
-                        <div>百科</div>
-                    </a>
+                <div class="text-area">
+                    <div class="func">
+                        <img src="img/expression.png" alt="">
+                        <img src="img/photo.png" alt="">
+                    </div>
+                    <label for="">
+                        <textarea id="txt"></textarea>
+                    </label>
+                </div>
+                <div class="submit">
+                    <span>按Enter键发送</span>
+                    <input type="button" value="发送" id="chat-btn">
                 </div>
             </div>
-            <div class="ad">
-                <img src="img/ad.jpg" alt="">
-                <span class="close">×</span>
-                <div>广告</div>
-            </div>
-            <div class="nav-link">
-                <a href="" class="clearfix">
-                    <i class="iconfont">&#xe671;</i>
-                    <span>我的收藏</span>
-                    <span class="nav-link-number">0</span>
-                </a>
-                <a href="" class="clearfix">
-                    <i class="iconfont">&#xe633;</i>
-                    <span>我关注的问题</span>
-                    <span class="nav-link-number">12</span>
-                </a>
-                <a href="" class="clearfix">
-                    <i class="iconfont">&#xe709;</i>
-                    <span>我的邀请</span>
-                    <span class="nav-link-number">233</span>
-                </a>
-                <a href="">
-                    <i class="iconfont">&#xe729;</i>
-                    <span>我的余额</span>
-                </a>
-                <a href="">
-                    <i class="iconfont">&#xe628;</i>
-                    <span>站务中心</span>
-                </a>
-                <a href="">
-                    <i class="iconfont">&#xe607;</i>
-                    <span>帮助中心</span>
-                </a>
-                <a href="">
-                    <i class="iconfont">&#xe674;</i>
-                    <span>版权服务中心</span>
-                </a>
-            </div>
-            <div class="ad">
-                <img src="img/ad1.jpg" alt="">
-                <span class="close">×</span>
-                <div>广告</div>
-            </div>
-            <ul class="copyright">
-                <li>
-                    <a href="">刘看山</a>
-                    <span>·</span>
-                    <a href="">知乎指南</a>
-                    <span>·</span>
-                    <a href="">知乎协议</a>
-                    <span>·</span>
-                </li>
-                <li>
-                    <a href="">知乎隐私保护指引</a>
-                </li>
-                <li>
-                    <a href="">应用</a>
-                    <span>·</span>
-                    <a href="">工作</a>
-                    <span>·</span>
-                    <a href="">申请开通知乎机构号</a>
-                </li>
-                <li>
-                    <a href="">侵权举报网上有害信息</a>
-                    <span>·</span>
-                    <a href="">举报专区</a>
-                </li>
-                <li>
-                    <a href="">京 ICP 证 110745 号</a>
-                </li>
-                <li>
-                    <a href="">京 ICP 备 13052560 号 - 1</a>
-                </li>
-                <li>
-                    <img src="img/rightcopy.png" alt="">
-                    <a href="">京公网安备 11010802010035 号</a>
-                </li>
-                <li>
-                    <div>互联网药品信息服务资格证书</div>
-                </li>
-                <li>
-                    <div>（京）- 非经营性 - 2017 - 0067</div>
-                </li>
-                <li>
-                    <div>违法和不良信息举报：010-82716601</div>
-                </li>
-                <li>
-                    <a href="">儿童色情信息举报专区</a>
-                </li>
-                <li>
-                    <a href="">证照中心</a>
-                </li>
-                <li>
-                    <a href="">联系我们</a>
-                    <div> © 2020 知乎</div>
-                </li>
-            </ul>
         </div>
     </div>
 

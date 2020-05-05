@@ -355,7 +355,7 @@
                             <i class="iconfont" id="message">&#xe62e;</i>
                         </li>
                         <li style="margin: 0;">
-                            <img src="img/head sulpture.jpg" alt="" class="sulpture">
+                            <img src="img/head sulpture.jpg" alt="" class="sulpture" id="home-top-sulpture">
                         </li>
                     </ul>
                     <div class="search-box">
@@ -402,60 +402,15 @@
                 <div class="friends-list">
                     <div class="list-head">我的私信</div>
                     <ul class="list">
-                        <li>
+                        <!-- <li>
                             <img src="img/friend-header.jpg" alt="" class="header">
                             <div class="content">
                                 <div class="friend-name">知乎小伙伴</div>
                                 <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                    亲爱的 拾柒：
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="list-foot clearfix">
                         <li class="fl">
@@ -468,6 +423,19 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- 点击我的头像 -->
+            <div class="head-menu">
+                <div class="goto-individual">
+                    <i class="iconfont">&#xe602;</i>
+                    <span>个人主页</span>
+                </div>
+                <div class="logout">
+                    <i class="iconfont">&#xe506;</i>
+                    <span>退出</span>
+                </div>
+            </div>
+
         </div>
 
         <div id="content" class="clearfix">
@@ -482,8 +450,68 @@
                         <li>关注</li>
                         <li>热榜</li>
                     </ul>
-                    <div class="article">
+                    <div class="article-list">
+                        <div class="article">
+                            <div class="article-title">
+                                <a href="">
+                                    你们看到过最丧的句子是什么？
+                                </a>
+                            </div>
+                            <div class="inner">
+                                <span class="inner-text">
+                                    张汉三： 1， 其实我们这代人，很多是没有后路的。 感到失败和望不到头的时候，没有那个外界默认的“避风港”。 不会觉得“就这样回家好了”，回到那个有爸爸妈妈…
+                                </span>
+                                <button type="button" class="inner-btn">
+                                    <span>阅读全文</span>
+                                    <i class="iconfont">&#xe698;</i>
+                                </button>
+                            </div>
+                            <ul class="action clearfix">
+                                <li>
+                                    <button type="button" class="agree">
+                                        <i>▲</i>
+                                        <span>赞同</span>
+                                        <span class="agree-num">10.6万</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dis-agree">▲</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe62e;</i>
+                                        <span class="comment-num">183</span>
+                                        <span>条评论</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe7d5;</i>
+                                        <span>分享</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe671;</i>
+                                        <span>收藏</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe65c;</i>
+                                        <span>喜欢</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <span>···</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="article">
 
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,161 +1,338 @@
-body {
-    background-color: #f6f6f6;
-}
-
-#head {
-    width: 100%;
-    height: 52px;
-    background-color: #fff;
-}
-
-#head .replace {
-    position: fixed;
-    top: 0px;
-    height: 52px;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgb(0, 0, 0, .1);
-    overflow: hidden;
-}
-
-#head .container {
-    width: 1000px;
-    height: 52px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-#head .container ul li,
-#head .swap ul li {
-    float: left;
-    height: 52px;
-    line-height: 52px;
-    color: rgb(133, 144, 166);
-}
-
-#head .container ul li span {
-    margin: 0 17px;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-#head .swap ul li span {
-    margin: 0 22px;
-    color: #000;
-    cursor: pointer;
-}
-
-#head .swap ul li .selected {
-    color: rgb(15, 136, 235);
-}
-
-#head .container .fr li {
-    margin-right: 40px;
-}
-
-#head .container ul li span:hover {
-    color: #000;
-}
-
-#head .container ul li .selected {
-    display: inline-block;
-    height: 49px;
-    color: #000;
-    border-bottom: 3px solid #0084ff;
-}
-
-#head i {
-    font-size: 22px;
-    color: rgb(133, 144, 166);
-    cursor: pointer;
-}
-
-#head .container ul li .logo {
-    font-size: 40px;
-    color: #0084ff;
-}
-
-#head img.sulpture {
-    width: 30px;
-    border-radius: 3px;
-    margin-top: 11px;
-    cursor: pointer;
-}
-
-#head .container .search-box {
-    position: relative;
-    width: 450px;
-    height: 34px;
-    margin: 0 auto;
-    padding-top: 10px;
-}
-
-#head .container .search-box form input {
-    display: inline-block;
-    width: 265px;
-    height: 32px;
-    padding-left: 10px;
-    margin-left: 50px;
-    outline: none;
-    border-radius: 4px 0 0 4px;
-    border: 1px solid rgb(235, 235, 235);
-    border-right: none;
-    background-color: rgb(246, 246, 246);
-}
-
-#head .swap form input {
-    display: inline-block;
-    width: 174px;
-    height: 24px;
-    padding: 4px 0;
-    padding-left: 10px;
-    outline: none;
-    border-radius: 4px 0 0 4px;
-    border: 1px solid rgb(235, 235, 235);
-    border-right: none;
-    background-color: rgb(246, 246, 246);
-}
-
-#head .container .search-box form button.submit {
-    position: absolute;
-    width: 44px;
-    height: 34px;
-    padding: 0 12px;
-    border: none;
-    outline: none;
-    border-radius: 0 4px 4px 0;
-    background-color: rgb(246, 246, 246);
-    border: 1px solid rgb(235, 235, 235);
-    border-left: none;
-}
-
-#head .swap form button.submit {
-    position: relative;
-    top: 3px;
-    width: 44px;
-    height: 34px;
-    padding: 0 12px;
-    margin-left: -5px;
-    border: none;
-    outline: none;
-    border-radius: 0 4px 4px 0;
-    background-color: rgb(246, 246, 246);
-    border: 1px solid rgb(235, 235, 235);
-    border-left: none;
-}
-
-#head .container .search-box .ques {
-    display: inline-block;
-    position: absolute;
-    left: 400px;
-    width: 58px;
-    height: 34px;
-    border-radius: 5px;
-    background-color: #0084ff;
-    text-align: center;
-    line-height: 34px;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-}
+    body {
+        background-color: #f6f6f6;
+    }
+    
+    #individual-page #head {
+        width: 100%;
+        height: 52px;
+        background-color: #fff;
+    }
+    
+    #individual-page #head .replace {
+        position: fixed;
+        top: 0px;
+        height: 52px;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+        box-shadow: 0 2px 4px rgb(0, 0, 0, .1);
+        overflow: hidden;
+    }
+    
+    #individual-page #head .container {
+        width: 1000px;
+        height: 52px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    
+    #individual-page #head .container ul li,
+    #individual-page #head .swap ul li {
+        float: left;
+        height: 52px;
+        line-height: 52px;
+        color: rgb(133, 144, 166);
+    }
+    
+    #individual-page #head .container ul li span {
+        margin: 0 17px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    #individual-page #head .swap ul li span {
+        margin: 0 22px;
+        color: #000;
+        cursor: pointer;
+    }
+    
+    #individual-page #head .container .fr li {
+        margin-right: 40px;
+    }
+    
+    #individual-page #head .container ul li span:hover {
+        color: #000;
+    }
+    
+    #individual-page #head .container ul li .selected {
+        display: inline-block;
+        height: 49px;
+        color: #000;
+        border-bottom: 3px solid #0084ff;
+    }
+    
+    #individual-page #head i {
+        font-size: 22px;
+        color: rgb(133, 144, 166);
+        cursor: pointer;
+    }
+    
+    #individual-page #head .container ul li .logo {
+        font-size: 40px;
+        color: #0084ff;
+    }
+    
+    #individual-page #head img.sulpture {
+        width: 30px;
+        border-radius: 3px;
+        margin-top: 11px;
+        cursor: pointer;
+    }
+    
+    #individual-page #head .container .search-box {
+        position: relative;
+        width: 450px;
+        height: 34px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    
+    #individual-page #head .container .search-box form input {
+        display: inline-block;
+        width: 265px;
+        height: 32px;
+        padding-left: 10px;
+        margin-left: 50px;
+        outline: none;
+        border-radius: 4px 0 0 4px;
+        border: 1px solid rgb(235, 235, 235);
+        border-right: none;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    #individual-page #head .swap form input {
+        display: inline-block;
+        width: 174px;
+        height: 24px;
+        padding: 4px 0;
+        padding-left: 10px;
+        outline: none;
+        border-radius: 4px 0 0 4px;
+        border: 1px solid rgb(235, 235, 235);
+        border-right: none;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    #individual-page #head .container .search-box form button.submit {
+        position: absolute;
+        width: 44px;
+        height: 34px;
+        padding: 0 12px;
+        border: none;
+        outline: none;
+        border-radius: 0 4px 4px 0;
+        background-color: rgb(246, 246, 246);
+        border: 1px solid rgb(235, 235, 235);
+        border-left: none;
+    }
+    
+    #individual-page #head .swap form button.submit {
+        position: relative;
+        top: 3px;
+        width: 44px;
+        height: 34px;
+        padding: 0 12px;
+        margin-left: -5px;
+        border: none;
+        outline: none;
+        border-radius: 0 4px 4px 0;
+        background-color: rgb(246, 246, 246);
+        border: 1px solid rgb(235, 235, 235);
+        border-left: none;
+    }
+    
+    #individual-page #head .container .search-box .ques {
+        display: inline-block;
+        position: absolute;
+        left: 400px;
+        width: 58px;
+        height: 34px;
+        border-radius: 5px;
+        background-color: #0084ff;
+        text-align: center;
+        line-height: 34px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    #individual-page #data {
+        width: 1000px;
+        margin: 20px auto;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+    
+    #individual-page #data .fir-pic,
+    #individual-page #data .information {
+        position: relative;
+    }
+    
+    #individual-page #data .fir-pic img {
+        width: 1000px;
+        height: 240px;
+    }
+    
+    #individual-page #data .fir-pic button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+        background-color: transparent;
+        color: gray;
+        cursor: pointer;
+    }
+    
+    #individual-page #data .fir-pic button input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    #individual-page #data .head-sulpture {
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        width: 160px;
+        height: 160px;
+        border: 4px solid #fff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    #individual-page #data .head-sulpture .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    #individual-page #data .head-sulpture .mask input {
+        position: absolute;
+        width: 160px;
+        height: 160px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    #individual-page #data .head-sulpture .mask i {
+        display: block;
+        width: 160px;
+        line-height: 160px;
+        text-align: center;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #individual-page #data .head-sulpture img {
+        position: absolute;
+        width: 100%;
+    }
+    
+    #individual-page #data .info {
+        border-left: 194px solid transparent;
+        padding: 16px 0 0 32px;
+        font-size: 15px;
+        background-color: #fff;
+    }
+    
+    #individual-page #data .info .content-head {
+        margin-bottom: 16px;
+    }
+    
+    #individual-page #data .info .content-head .formmer {
+        float: left;
+        width: 658px;
+    }
+    
+    #individual-page #data .info h3 {
+        display: inline-block;
+        width: 140px;
+        vertical-align: top;
+    }
+    
+    #individual-page #data .info .content-head .name {
+        line-height: 35px;
+    }
+    
+    #individual-page #data .info .content-head .return {
+        float: right;
+        width: 108px;
+        line-height: 35px;
+        color: #8590a6;
+    }
+    
+    #individual-page #data .info .content-head .return:hover {
+        color: grey;
+    }
+    
+    #individual-page #data .info form {
+        width: 764px;
+        padding: 30px 0;
+        line-height: 35px;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+    
+    #individual-page #data .info .form-content {
+        display: inline-block;
+    }
+    
+    #individual-page #data .info .form-content button,
+    #individual-page #data .info .name button {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        background-color: #fff;
+        color: #175199;
+        cursor: pointer;
+    }
+    
+    #individual-page #data .info .form-content button i,
+    #individual-page #data .info .name button i {
+        color: #175199;
+    }
+    /* 修改性别 */
+    
+    #individual-page #data .info .choices {
+        display: none;
+    }
+    
+    #individual-page #data .info .button-group button {
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+    
+    #individual-page #data .info .button-group .keep-blue {
+        background-color: #0084ff;
+    }
+    
+    #individual-page #data .info .button-group .grey {
+        background-color: gray;
+    }
+    
+    #individual-page #data .info .form-content .choices input {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    #individual-page #data .info .form-content .choices #introduction,
+    #individual-page #data .info .form-content .choices #recommend,
+    #individual-page #data .info .form-content .choices #area,
+    #individual-page #data .info .choices #name {
+        width: 518px;
+        height: 24px;
+        padding: 4px 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+    }
+    
+    #individual-page #data .info .form-content .choices #recommend {
+        height: 78px;
+    }

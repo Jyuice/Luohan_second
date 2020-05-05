@@ -37,7 +37,7 @@
                             <i class="iconfont" id="message">&#xe62e;</i>
                         </li>
                         <li style="margin: 0;">
-                            <img src="img/head sulpture.jpg" alt="" class="sulpture">
+                            <img src="img/head sulpture.jpg" alt="" class="sulpture" id="home-top-sulpture">
                         </li>
                     </ul>
                     <div class="search-box">
@@ -84,60 +84,15 @@
                 <div class="friends-list">
                     <div class="list-head">我的私信</div>
                     <ul class="list">
-                        <li>
+                        <!-- <li>
                             <img src="img/friend-header.jpg" alt="" class="header">
                             <div class="content">
                                 <div class="friend-name">知乎小伙伴</div>
                                 <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
+                                    亲爱的 拾柒：
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒： 互联网行业的风口之下，优秀的产品经理都在做什么？ 一场千万奖励基金的产品设计大赛来袭~ 新手来围观，高手来挑战~ 1 站式收集互联网大厂认可的产品设计作品，为你的职业发展道路开拓视野、积累经验，快来免费参与吧~ 爱你的知乎小伙伴
-                                </div>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                     <ul class="list-foot clearfix">
                         <li class="fl">
@@ -150,6 +105,19 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- 点击我的头像 -->
+            <div class="head-menu">
+                <div class="goto-individual">
+                    <i class="iconfont">&#xe602;</i>
+                    <span>个人主页</span>
+                </div>
+                <div class="logout">
+                    <i class="iconfont">&#xe506;</i>
+                    <span>退出</span>
+                </div>
+            </div>
+
         </div>
 
         <div id="content" class="clearfix">
@@ -164,9 +132,218 @@
                         <li>关注</li>
                         <li>热榜</li>
                     </ul>
-                    <div class="article">
-
+                    <div class="article-list">
+                        <!-- <div class="article">
+                            <div class="article-title">
+                                <a href="">
+                                    你们看到过最丧的句子是什么？
+                                </a>
+                            </div>
+                            <div class="inner">
+                                <span class="inner-text">
+                                    张汉三： 1， 其实我们这代人，很多是没有后路的。 感到失败和望不到头的时候，没有那个外界默认的“避风港”。 不会觉得“就这样回家好了”，回到那个有爸爸妈妈…
+                                </span>
+                                <button type="button" class="inner-btn">
+                                    <span>阅读全文</span>
+                                    <i class="iconfont">&#xe698;</i>
+                                </button>
+                            </div>
+                            <ul class="action clearfix">
+                                <li>
+                                    <button type="button" class="agree">
+                                        <i>▲</i>
+                                        <span>赞同</span>
+                                        <span class="agree-num">10.6万</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dis-agree">▲</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe62e;</i>
+                                        <span class="reply-num">183</span>
+                                        <span>条评论</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe7d5;</i>
+                                        <span>分享</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe671;</i>
+                                        <span>收藏</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe65c;</i>
+                                        <span>喜欢</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <span>···</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="whole-article clearfix">
+                            <div class="article-title">
+                                <a href="">
+                                    如何评价李易峰？
+                                </a>
+                            </div>
+                            <div class="author">
+                                <img src="img/head sulpture.jpg" alt="" class="avartar">
+                                <span class="author-name">匿名用户</span>
+                            </div>
+                            <div class="voter">
+                                <span class="vote-num">19,936</span>
+                                <span>人赞同了该回答</span>
+                            </div>
+                            <div class="inner-whole-text">
+                                李易峰，1987年5月4日出生于四川成都，中国内地男演员、流行乐歌手、影视制片人，毕业于四川师范大学电影电视学院。 2007年，参加东方卫视选秀娱乐节目《加油！好男儿》的比赛，获得全国总决赛第八名，从而正式出道 [1] ；同年，发行首张EP《四叶草》。2009年，发行首张个人专辑《小先生》 [2] 。2010年，主演都市爱情剧《幸福一定强》 [3] 、《幸福最晴天》 [4] ，获2011年国剧盛典最佳新演员奖 [5] 。2012年，在都市爱情剧《真爱谎言》中挑战扮演自闭症患者 [6] 。2013年，凭借都市爱情剧《千金归来》获得乐视盛典最受欢迎男演员奖.
+                                2014年，因古装仙侠剧《古剑奇谭》中“百里屠苏”一角而获得广泛关注 [7] ；并获得国剧盛典内地最具人气男演员和最具商业价值男演员奖 [8] 。2015年，主演年代剧《活色生香》和网络季播剧《盗墓笔记》 [9] ；同年，主演电影《栀子花开》 [10] 、《怦然星动》 [11] ；同年，获得“2015年福布斯中国名人榜”第九名。2016年，凭借电影《老炮儿》获第33届大众电影百花奖最佳男配角奖 [12] ；同年，主演谍战剧《麻雀》 [13]
+                                、仙侠剧《青云志》和电影《心理罪》 [14] 。 2017年5月，获得第22届电视华鼎奖中国百强电视剧最佳男主角，并当选十年全国观众最喜爱的影视明星；同年，主演电影《动物世界》和创业励志电视剧《我在北京等你》 [15] 。2018年3月，主演民国生活剧《隐秘而伟大》 [16] 。同年10月14日，荣获第29届中国电视金鹰奖观众喜爱的男演员奖和第12届中国金鹰电视艺术节最具人气男演员奖两项大奖 [17] 。 2019年10月，出演火箭军题材电视剧《号手就位》
+                            </div>
+                            <div class="public-time">
+                                <span>编辑于</span>
+                                <span class="date">2020-04-30</span>
+                            </div>
+                            <ul class="action">
+                                <li>
+                                    <button type="button" class="agree">
+                                        <i>▲</i>
+                                        <span>赞同</span>
+                                        <span class="agree-num">10.6万</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dis-agree">▲</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe62e;</i>
+                                        <span class="comment-num">183</span>
+                                        <span>条评论</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe7d5;</i>
+                                        <span>分享</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe671;</i>
+                                        <span>收藏</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe65c;</i>
+                                        <span>喜欢</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <span>···</span>
+                                    </button>
+                                </li>
+                                <li class="fold">
+                                    <span>收起</span>
+                                    <i class="iconfont">&#xe632;</i>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
+                    <!-- <div class="comment-box">
+                        <div class="comment-top">
+                            <div>
+                                <span class="part-comment-num">38</span>
+                                <span>条评论</span>
+                            </div>
+                        </div>
+                        <div class="comment-title">
+                            <span>评论</span>
+                            <span class="all-comment-num">(45)</span>
+                        </div>
+                        <div class="comment-list">
+                            <div class="inner-comment-box">
+                                <div class="comment-bar">
+                                    <div class="inner-comment-top clearfix">
+                                        <img src="img/head sulpture.jpg" alt="">
+                                        <span class="comment-author-name">拾柒</span>
+                                        <div class="comment-time">两天前</div>
+                                    </div>
+                                    <div class="inner-comment">
+                                        <div class="inner-comment-text">
+                                            妈妈切的西瓜没有蒜味。哈哈哈哈[捂脸][捂脸]嘴里突然有了那种赶脚
+                                        </div>
+                                        <ul class="comment-footer">
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg>
+                                                <span>点赞</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg>
+                                                <span>回复</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg>
+                                                <span>踩</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Report" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M19.947 3.129c-.633.136-3.927.639-5.697.385-3.133-.45-4.776-2.54-9.949-.888-.997.413-1.277 1.038-1.277 2.019L3 20.808c0 .3.101.54.304.718a.97.97 0 0 0 .73.304c.275 0 .519-.102.73-.304.202-.179.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V3.964c0-.599-.42-.972-1.053-.835z" fill-rule="evenodd"></path></svg>
+                                                <span>举报</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="reply-bar">
+                                    <div class="inner-reply-top clearfix">
+                                        <img src="img/head sulpture.jpg" alt="">
+                                        <span class="reply-author-name">拾柒</span>
+                                        <span class="grey-reply">回复</span>
+                                        <span class="comment-author-name">拾柒</span>
+                                        <div class="reply-time">两天前</div>
+                                    </div>
+                                    <div class="inner-reply">
+                                        <div class="inner-reply-text">
+                                            哈哈哈哈
+                                        </div>
+                                        <ul class="reply-footer">
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg>
+                                                <span>点赞</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg>
+                                                <span>回复</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg>
+                                                <span>踩</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Report" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M19.947 3.129c-.633.136-3.927.639-5.697.385-3.133-.45-4.776-2.54-9.949-.888-.997.413-1.277 1.038-1.277 2.019L3 20.808c0 .3.101.54.304.718a.97.97 0 0 0 .73.304c.275 0 .519-.102.73-.304.202-.179.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V3.964c0-.599-.42-.972-1.053-.835z" fill-rule="evenodd"></path></svg>
+                                                <span>举报</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-comment clearfix">
+                            <input type="text" id="self-comment-text" placeholder="写下你的评论…">
+                            <button type="button" id="submit-comment">发布</button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div id="nav" class="fr">

@@ -81,10 +81,11 @@ lg_btn.onclick = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             //此时这个返回的数据是个字符串，需要调用JSON.parse方法把他转成js对象才能够操作
             var returnData = JSON.parse(xhr.responseText)
-                //成功对应做成功的业务逻辑，失败对应做失败的业务逻辑
+                //成功对应做成功的业务逻辑，x`失败对应做失败的业务逻辑
             if (returnData.result === 'success') {
-                document.getElementById('login-page').style.display = 'none';
-                document.getElementById('home-page').style.display = 'block';
+                // document.getElementById('login-page').style.display = 'none';
+                // document.getElementById('home-page').style.display = 'block';
+                console.log(returnData);
             } else {
                 alert('登陆失败，请重新尝试');
             }

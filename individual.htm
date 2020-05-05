@@ -11,50 +11,185 @@
 </head>
 
 <body>
-    <div id="head">
-        <div class="replace">
-            <div class="container clearfix">
-                <ul class="fl">
-                    <li>
-                        <i class="iconfont logo">&#xe510;</i>
-                    </li>
-                    <li>
-                        <span class="selected">首页</span>
-                    </li>
-                    <li>
-                        <span>发现</span>
-                    </li>
-                    <li>
-                        <span>等你来答</span>
-                    </li>
-                </ul>
-                <ul class="fr">
-                    <li>
-                        <i class="iconfont" id="alert">&#xe845;</i>
-                    </li>
-                    <li>
-                        <i class="iconfont" id="message">&#xe62e;</i>
-                    </li>
-                    <li style="margin: 0;">
-                        <img src="img/head sulpture.jpg" alt="" class="sulpture">
-                    </li>
-                </ul>
-                <div class="search-box">
-                    <form action="#">
-                        <input type="text">
-                        <button type="submit" class="submit">
-                            <i class="iconfont">&#xe61c;</i>
-                        </button>
-                        <div class="ques">提问</div>
+    <div id="individual-page">
+        <div id="head">
+            <div class="replace">
+                <div class="container clearfix">
+                    <ul class="fl">
+                        <li>
+                            <i class="iconfont logo">&#xe510;</i>
+                        </li>
+                        <li>
+                            <span>首页</span>
+                        </li>
+                        <li>
+                            <span>发现</span>
+                        </li>
+                        <li>
+                            <span>等你来答</span>
+                        </li>
+                    </ul>
+                    <ul class="fr">
+                        <li>
+                            <i class="iconfont" id="alert">&#xe845;</i>
+                        </li>
+                        <li>
+                            <i class="iconfont" id="message">&#xe62e;</i>
+                        </li>
+                        <li style="margin: 0;">
+                            <img src="" alt="" class="sulpture" id="individual-top-sulpture">
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <form action="#">
+                            <input type="text">
+                            <button type="submit" class="submit">
+                                <i class="iconfont">&#xe61c;</i>
+                            </button>
+                            <div class="ques">提问</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="data">
+            <div class="fir-pic">
+                <img src="img/in/head_.jpg" alt="" id="fir-pic">
+                <button>
+                    <i class="iconfont">&#xe6b2;</i>
+                    <span>编辑封面图片</span>
+                </button>
+            </div>
+            <div class="information">
+                <div class="head-sulpture">
+                    <img src="" alt="" id="sulpture">
+                    <div class="mask">
+                        <form action="" id="form">
+                            <input type="file" id="file">
+                        </form>
+                        <i class="iconfont">&#xe6b2;</i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="content-head clearfix">
+                        <div class="formmer">
+                            <h1 class="name">
+                                <span class="content-text">拾柒</span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </h1>
+                        </div>
+
+                        <!-- 修改 -->
+                        <div class="choices">
+                            <input type="text" name="username" id="name" value="拾柒">
+                            <div class="button-group">
+                                <button type="button" class="keep-blue">保存</button>
+                                <button type="button" class="grey">取消</button>
+                            </div>
+                        </div>
+
+                        <a href="" class="return">返回我的主页</a>
+
+                    </div>
+                    <form action="">
+                        <h3>性别</h3>
+                        <div class="form-content">
+                            <!-- 信息 -->
+                            <div class="formmer">
+                                <span class="content-text">女</span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <label for="">
+                                    <input type="radio" name="sex" value="男">男
+                                    <input type="radio" name="sex" value="女">女
+                                </label>
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>一句话介绍</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text">学生</span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="introduction" type="text" name="introduction" value="学生">
+                                <!-- value是content-text.innerHTML -->
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>所在行业</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text">计算机软件</span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="area" type="text" name="introduction" value="计算机软件">
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>个人简介</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text">熬夜协会的常任理事</span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="recommend" type="text" name="recommend" value="熬夜协会的常任理事">
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="data">
-
-    </div>
+    <script src="js/individual.js"></script>
 </body>
 
 </html>

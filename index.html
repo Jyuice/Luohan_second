@@ -8,6 +8,8 @@
     <link rel="icon" href="ico/icon.ico">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/individual.css">
+    <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
@@ -29,8 +31,8 @@
                     <button type="button" id="menu">
                         <span class="place">中国+86</span>
                         <i class="iconfont">&#xe667;</i>
-                </button>
-                    <!-- 列表 -->
+                    </button>
+                    <!-- 地区列表 -->
                     <ul class="Select-list" role="listbox">
                         <li><button class="Select-option" type="button" tabindex="-1" role="option" id="Select1-0">中国 +86</button></li>
                         <li><button class="Select-option" type="button" tabindex="-1" role="option" id="Select1-1">美国 +1</button></li>
@@ -351,24 +353,62 @@
                         <li>
                             <i class="iconfont" id="alert">&#xe845;</i>
                         </li>
-                        <li>
+                        <li style="position: relative;">
                             <i class="iconfont" id="message">&#xe62e;</i>
+                            <!-- 好友列表 -->
+                            <div class="friends-box">
+                                <div class="trangle"></div>
+                                <div class="friends-list">
+                                    <div class="list-head">我的私信</div>
+                                    <ul class="list">
+                                        <!-- <li>
+                                            <img src="img/friend-header.jpg" alt="" class="header">
+                                            <div class="content">
+                                                <div class="friend-name">知乎小伙伴</div>
+                                                <div class="message">
+                                                    亲爱的 拾柒：
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                    <ul class="list-foot">
+                                        <li>
+                                            <i class="iconfont">&#xe50a;</i>
+                                            <span>写新私信</span>
+                                        </li>
+                                        <li>
+                                            <span>查看全部私信</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li style="margin: 0;">
-                            <img src="img/head sulpture.jpg" alt="" class="sulpture" id="home-top-sulpture">
+                        <li style="margin: 0;position: relative;">
+                            <img src="" alt="" class="sulpture" id="home-top-sulpture">
+                            <!-- 点击我的头像 -->
+                            <div class="head-menu">
+                                <div class="goto-individual">
+                                    <i class="iconfont">&#xe602;</i>
+                                    <span>个人主页</span>
+                                </div>
+                                <div class="logout">
+                                    <i class="iconfont">&#xe506;</i>
+                                    <span>退出</span>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                     <div class="search-box">
                         <form action="#">
-                            <input type="text">
+                            <input type="text" placeholder="为了进RDC你有多迷信">
                             <button type="submit" class="submit">
-                            <i class="iconfont">&#xe61c;</i>
-                    </button>
+                                <i class="iconfont">&#xe61c;</i>
+                            </button>
                             <div class="ques">提问</div>
                         </form>
                     </div>
                 </div>
-                <div class="swap clearfix">
+                <!-- <div class="swap clearfix">
                     <ul class="fl">
                         <li>
                             <a href="https://www.zhihu.com/">
@@ -394,48 +434,8 @@
                             <div class="ques">提问</div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <!-- 好友列表 -->
-            <div class="friends-box">
-                <div class="trangle"></div>
-                <div class="friends-list">
-                    <div class="list-head">我的私信</div>
-                    <ul class="list">
-                        <!-- <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒：
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
-                    <ul class="list-foot clearfix">
-                        <li class="fl">
-                            <i class="iconfont">&#xe50a;</i>
-                            <span>写新私信</span>
-                        </li>
-                        <li class="fr">
-                            <span>查看全部私信</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 点击我的头像 -->
-            <div class="head-menu">
-                <div class="goto-individual">
-                    <i class="iconfont">&#xe602;</i>
-                    <span>个人主页</span>
-                </div>
-                <div class="logout">
-                    <i class="iconfont">&#xe506;</i>
-                    <span>退出</span>
-                </div>
-            </div>
-
         </div>
 
         <div id="content" class="clearfix">
@@ -451,7 +451,7 @@
                         <li>热榜</li>
                     </ul>
                     <div class="article-list">
-                        <div class="article">
+                        <!-- <div class="article">
                             <div class="article-title">
                                 <a href="">
                                     你们看到过最丧的句子是什么？
@@ -467,6 +467,72 @@
                                 </button>
                             </div>
                             <ul class="action clearfix">
+                                <li>
+                                    <button type="button" class="agree">
+                                        <i>▲</i>
+                                        <span>赞同</span>
+                                        <span class="agree-num">10.6万</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dis-agree">▲</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe62e;</i>
+                                        <span class="reply-num">183</span>
+                                        <span>条评论</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe7d5;</i>
+                                        <span>分享</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe671;</i>
+                                        <span>收藏</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <i class="iconfont">&#xe65c;</i>
+                                        <span>喜欢</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="inner-func">
+                                        <span>···</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <!-- <div class="whole-article clearfix">
+                            <div class="article-title">
+                                <a href="">
+                                    如何评价李易峰？
+                                </a>
+                            </div>
+                            <div class="author">
+                                <img src="img/head sulpture.jpg" alt="" class="avartar">
+                                <span class="author-name">匿名用户</span>
+                            </div>
+                            <div class="voter">
+                                <span class="vote-num">19,936</span>
+                                <span>人赞同了该回答</span>
+                            </div>
+                            <div class="inner-whole-text">
+                                李易峰，1987年5月4日出生于四川成都，中国内地男演员、流行乐歌手、影视制片人，毕业于四川师范大学电影电视学院。 2007年，参加东方卫视选秀娱乐节目《加油！好男儿》的比赛，获得全国总决赛第八名，从而正式出道 [1] ；同年，发行首张EP《四叶草》。2009年，发行首张个人专辑《小先生》 [2] 。2010年，主演都市爱情剧《幸福一定强》 [3] 、《幸福最晴天》 [4] ，获2011年国剧盛典最佳新演员奖 [5] 。2012年，在都市爱情剧《真爱谎言》中挑战扮演自闭症患者 [6] 。2013年，凭借都市爱情剧《千金归来》获得乐视盛典最受欢迎男演员奖.
+                                2014年，因古装仙侠剧《古剑奇谭》中“百里屠苏”一角而获得广泛关注 [7] ；并获得国剧盛典内地最具人气男演员和最具商业价值男演员奖 [8] 。2015年，主演年代剧《活色生香》和网络季播剧《盗墓笔记》 [9] ；同年，主演电影《栀子花开》 [10] 、《怦然星动》 [11] ；同年，获得“2015年福布斯中国名人榜”第九名。2016年，凭借电影《老炮儿》获第33届大众电影百花奖最佳男配角奖 [12] ；同年，主演谍战剧《麻雀》 [13]
+                                、仙侠剧《青云志》和电影《心理罪》 [14] 。 2017年5月，获得第22届电视华鼎奖中国百强电视剧最佳男主角，并当选十年全国观众最喜爱的影视明星；同年，主演电影《动物世界》和创业励志电视剧《我在北京等你》 [15] 。2018年3月，主演民国生活剧《隐秘而伟大》 [16] 。同年10月14日，荣获第29届中国电视金鹰奖观众喜爱的男演员奖和第12届中国金鹰电视艺术节最具人气男演员奖两项大奖 [17] 。 2019年10月，出演火箭军题材电视剧《号手就位》
+                            </div>
+                            <div class="public-time">
+                                <span>编辑于</span>
+                                <span class="date">2020-04-30</span>
+                            </div>
+                            <ul class="action">
                                 <li>
                                     <button type="button" class="agree">
                                         <i>▲</i>
@@ -507,14 +573,99 @@
                                         <span>···</span>
                                     </button>
                                 </li>
+                                <li class="fold">
+                                    <span>收起</span>
+                                    <i class="iconfont">&#xe632;</i>
+                                </li>
                             </ul>
-                        </div>
-                        <div class="article">
-
-                        </div>
+                        </div> -->
                     </div>
+                    <!-- <div class="comment-box">
+                        <div class="comment-top">
+                            <div>
+                                <span class="part-comment-num">38</span>
+                                <span>条评论</span>
+                            </div>
+                        </div>
+                        <div class="comment-title">
+                            <span>评论</span>
+                            <span class="all-comment-num">(45)</span>
+                        </div>
+                        <div class="comment-list">
+                            <div class="inner-comment-box">
+                                <div class="comment-bar">
+                                    <div class="inner-comment-top clearfix">
+                                        <img src="img/head sulpture.jpg" alt="">
+                                        <span class="comment-author-name">拾柒</span>
+                                        <div class="comment-time">两天前</div>
+                                    </div>
+                                    <div class="inner-comment">
+                                        <div class="inner-comment-text">
+                                            妈妈切的西瓜没有蒜味。哈哈哈哈[捂脸][捂脸]嘴里突然有了那种赶脚
+                                        </div>
+                                        <ul class="comment-footer">
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg>
+                                                <span>点赞</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg>
+                                                <span>回复</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg>
+                                                <span>踩</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Report" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M19.947 3.129c-.633.136-3.927.639-5.697.385-3.133-.45-4.776-2.54-9.949-.888-.997.413-1.277 1.038-1.277 2.019L3 20.808c0 .3.101.54.304.718a.97.97 0 0 0 .73.304c.275 0 .519-.102.73-.304.202-.179.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V3.964c0-.599-.42-.972-1.053-.835z" fill-rule="evenodd"></path></svg>
+                                                <span>举报</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="reply-bar">
+                                    <div class="inner-reply-top clearfix">
+                                        <img src="img/head sulpture.jpg" alt="">
+                                        <span class="reply-author-name">拾柒</span>
+                                        <span class="grey-reply">回复</span>
+                                        <span class="comment-author-name">拾柒</span>
+                                        <div class="reply-time">两天前</div>
+                                    </div>
+                                    <div class="inner-reply">
+                                        <div class="inner-reply-text">
+                                            哈哈哈哈
+                                        </div>
+                                        <ul class="reply-footer">
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg>
+                                                <span>点赞</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg>
+                                                <span>回复</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg>
+                                                <span>踩</span>
+                                            </li>
+                                            <li>
+                                                <svg class="Zi Zi--Report" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M19.947 3.129c-.633.136-3.927.639-5.697.385-3.133-.45-4.776-2.54-9.949-.888-.997.413-1.277 1.038-1.277 2.019L3 20.808c0 .3.101.54.304.718a.97.97 0 0 0 .73.304c.275 0 .519-.102.73-.304.202-.179.304-.418.304-.718v-6.58c4.533-1.235 8.047.668 8.562.864 2.343.893 5.542.008 6.774-.657.397-.178.596-.474.596-.887V3.964c0-.599-.42-.972-1.053-.835z" fill-rule="evenodd"></path></svg>
+                                                <span>举报</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-comment clearfix">
+                            <input type="text" id="self-comment-text" placeholder="写下你的评论…">
+                            <button type="button" id="submit-comment">发布</button>
+                        </div>
+                    </div> -->
                 </div>
             </div>
+
+            <!-- 侧栏 -->
             <div id="nav" class="fr">
                 <div class="func">
                     <div class="nav-top">
@@ -611,11 +762,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="ad">
-                    <img src="img/ad.jpg" alt="">
-                    <span class="close">×</span>
-                    <div>广告</div>
-                </div>
                 <div class="nav-link">
                     <a href="" class="clearfix">
                         <i class="iconfont">&#xe671;</i>
@@ -648,11 +794,6 @@
                         <i class="iconfont">&#xe674;</i>
                         <span>版权服务中心</span>
                     </a>
-                </div>
-                <div class="ad">
-                    <img src="img/ad1.jpg" alt="">
-                    <span class="close">×</span>
-                    <div>广告</div>
                 </div>
                 <ul class="copyright">
                     <li>
@@ -719,11 +860,9 @@
                     <span class="close">×</span>
                 </div>
                 <div class="chat-body">
-                    <div class="receive clearfix">
+                    <!-- <div class="receive clearfix">
                         <div class="time">
-                            <span class="hour">18</span>
-                            <span>:</span>
-                            <span class="minute">24</span>
+                            <span>18:24</span>
                         </div>
                         <div class="chat-message clearfix">
                             <img src="img/friend-header.jpg" alt="" class="not-my-header">
@@ -744,7 +883,7 @@
                                 你好
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="text-area">
                     <div class="func">
@@ -761,13 +900,294 @@
                 </div>
             </div>
         </div>
+
+        <!-- 回复框 -->
+        <div id="commentV2">
+            <div class="boxV2">
+
+                <div class="topbarV2 clearfix">
+                    查看对话
+                    <span class="close fr">
+                        <svg class="Zi Zi--Close Modal-closeIcon" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M13.486 12l5.208-5.207a1.048 1.048 0 0 0-.006-1.483 1.046 1.046 0 0 0-1.482-.005L12 10.514 6.793 5.305a1.048 1.048 0 0 0-1.483.005 1.046 1.046 0 0 0-.005 1.483L10.514 12l-5.208 5.207a1.048 1.048 0 0 0 .006 1.483 1.046 1.046 0 0 0 1.482.005L12 13.486l5.207 5.208a1.048 1.048 0 0 0 1.483-.006 1.046 1.046 0 0 0 .005-1.482L13.486 12z" fill-rule="evenodd"></path></svg>
+                    </span>
+                </div>
+
+                <div class="barV2">
+                    <div class="itemV2">
+
+                        <div class="itemTopV2 clearfix">
+                            <img src="img/head sulpture.jpg" alt="" class="avatarV2">
+                            <!-- 评论者的头像 -->
+                            <span class="authorV2"></span>
+                            <!-- 评论者id -->
+                            <div class="timeV2"></div>
+                            <!-- 时间 -->
+                        </div>
+                        <div class="innerV2">
+                            <div class="inner-textV2">
+                                <!-- 评论内容 -->
+                            </div>
+                            <ul class="footerV2">
+                                <li class="niceV2">
+                                    <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg></span>
+                                    <span class="nice-numV2"></span>
+                                    <!-- 点赞数 -->
+                                </li>
+                                <li class="badV2">
+                                    <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg></span>
+                                    <span class="bad-numV2">踩</span>
+                                    <!-- 点踩与否 -->
+                                </li>
+                                <li class="replyV2">
+                                    <span><svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg></span>
+                                    <span>回复</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-commentV2 clearfix">
+                            <input type="text" class="self-comment-textV2" placeholder="写下你的评论…">
+                            <button type="button" class="submit-commentV2">发布</button>
+                        </div>
+                    </div>
+
+                    <div class="gapV2"></div>
+                    <div class="numV2">
+                        <span class="num"></span>
+                        <span>条评论</span>
+                    </div>
+
+                    <div class="listV2">
+
+                        <!-- <div class="infoV2">
+                            <div class="innerTopV2 clearfix">
+                                <img src="img/1.jpg" alt="">
+                                <span>杀了你的马</span>
+                                <div class="timeV2">${index.time.slice(0,10)}</div>
+                            </div>
+                            <div class="innerV2">
+                                <div class="inner-textV2">
+                                    哈哈哈
+                                </div>
+                                <ul class="footerV2">
+                                    <li class="niceV2 ${index.liked && !index.disliked ? 'active' : ''}" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg></span>
+                                        <span>点赞</span>
+                                    </li>
+                                    <li class="badV2 ${index.disliked && !index.liked ? 'active' : ''}" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg></span>
+                                        <span>踩</span>
+                                    </li>
+                                    <li class="replyV2" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg></span>
+                                        <span>回复</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 用户界面 -->
+    <div id="individual-page">
+        <div id="head">
+            <div class="replace">
+                <div class="container clearfix">
+                    <ul class="fl">
+                        <li>
+                            <i class="iconfont logo">&#xe510;</i>
+                        </li>
+                        <li>
+                            <span>首页</span>
+                        </li>
+                        <li>
+                            <span>发现</span>
+                        </li>
+                        <li>
+                            <span>等你来答</span>
+                        </li>
+                    </ul>
+                    <ul class="fr">
+                        <li>
+                            <i class="iconfont" id="alert">&#xe845;</i>
+                        </li>
+                        <li>
+                            <i class="iconfont" id="message">&#xe62e;</i>
+                        </li>
+                        <li style="margin: 0;position: relative;">
+                            <img src="" alt="" class="sulpture" id="individual-top-sulpture">
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <form action="#">
+                            <input type="text" placeholder="在登录界面绑定退出登录的接口是什么体验">
+                            <button type="submit" class="submit">
+                                <i class="iconfont">&#xe61c;</i>
+                            </button>
+                            <div class="ques">提问</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="data">
+            <div class="fir-pic">
+                <img src="img/in/head_.jpg" alt="" id="fir-pic">
+                <button>
+                    <i class="iconfont">&#xe6b2;</i>
+                    <span>编辑封面图片</span>
+                </button>
+            </div>
+            <div class="information">
+                <div class="head-sulpture">
+                    <img src="" alt="" id="sulpture">
+                    <div class="mask">
+                        <form action="" id="form">
+                            <input type="file" id="file">
+                        </form>
+                        <i class="iconfont">&#xe6b2;</i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="content-head clearfix">
+                        <div class="formmer">
+                            <h1 class="name">
+                                <span class="content-text"></span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </h1>
+                        </div>
+
+                        <!-- 修改 -->
+                        <div class="choices">
+                            <input type="text" name="username" id="name" value="">
+                            <div class="button-group">
+                                <button type="button" class="keep-blue">保存</button>
+                                <button type="button" class="grey">取消</button>
+                            </div>
+                        </div>
+
+                        <a href="" class="return">返回我的主页</a>
+
+                    </div>
+                    <form action="">
+                        <h3>性别</h3>
+                        <div class="form-content">
+                            <!-- 信息 -->
+                            <div class="formmer">
+                                <span class="content-text"></span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <label for="">
+                                    <input type="radio" name="sex" value="男">男
+                                    <input type="radio" name="sex" value="女">女
+                                </label>
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>一句话介绍</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text"></span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="introduction" type="text" name="introduction" value="">
+                                <!-- value是content-text.innerHTML -->
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>所在行业</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text"></span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="area" type="text" name="introduction" value="">
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="">
+                        <h3>个人简介</h3>
+                        <div class="form-content">
+                            <div class="formmer">
+                                <span class="content-text"></span>
+                                <button class="key" type="button">
+                                    <i class="iconfont">&#xe50a;</i>
+                                    <span>修改</span>
+                                </button>
+                            </div>
+
+                            <!-- 修改 -->
+                            <div class="choices">
+                                <input id="recommend" type="text" name="recommend" value="">
+                                <div class="button-group">
+                                    <button type="button" class="keep-blue">保存</button>
+                                    <button type="button" class="grey">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading">
+        <div class="page-loading">
+            <div class="monster">
+                <div class="eye">
+                    <div class="eyeball"></div>
+                </div>
+                <div class="mouth"></div>
+            </div>
+            <div class="loading">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- js -->
     <script src="js/login.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/individual.js"></script>
 </body>
 
 </html>

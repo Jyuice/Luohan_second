@@ -33,24 +33,62 @@
                         <li>
                             <i class="iconfont" id="alert">&#xe845;</i>
                         </li>
-                        <li>
+                        <li style="position: relative;">
                             <i class="iconfont" id="message">&#xe62e;</i>
+                            <!-- 好友列表 -->
+                            <div class="friends-box">
+                                <div class="trangle"></div>
+                                <div class="friends-list">
+                                    <div class="list-head">我的私信</div>
+                                    <ul class="list">
+                                        <!-- <li>
+                                            <img src="img/friend-header.jpg" alt="" class="header">
+                                            <div class="content">
+                                                <div class="friend-name">知乎小伙伴</div>
+                                                <div class="message">
+                                                    亲爱的 拾柒：
+                                                </div>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+                                    <ul class="list-foot">
+                                        <li>
+                                            <i class="iconfont">&#xe50a;</i>
+                                            <span>写新私信</span>
+                                        </li>
+                                        <li>
+                                            <span>查看全部私信</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
-                        <li style="margin: 0;">
+                        <li style="margin: 0;position: relative;">
                             <img src="img/head sulpture.jpg" alt="" class="sulpture" id="home-top-sulpture">
+                            <!-- 点击我的头像 -->
+                            <div class="head-menu">
+                                <div class="goto-individual">
+                                    <i class="iconfont">&#xe602;</i>
+                                    <span>个人主页</span>
+                                </div>
+                                <div class="logout">
+                                    <i class="iconfont">&#xe506;</i>
+                                    <span>退出</span>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                     <div class="search-box">
                         <form action="#">
                             <input type="text">
                             <button type="submit" class="submit">
-                            <i class="iconfont">&#xe61c;</i>
-                    </button>
+                                <i class="iconfont">&#xe61c;</i>
+                            </button>
                             <div class="ques">提问</div>
                         </form>
                     </div>
                 </div>
-                <div class="swap clearfix">
+                <!-- <div class="swap clearfix">
                     <ul class="fl">
                         <li>
                             <a href="https://www.zhihu.com/">
@@ -76,48 +114,8 @@
                             <div class="ques">提问</div>
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <!-- 好友列表 -->
-            <div class="friends-box">
-                <div class="trangle"></div>
-                <div class="friends-list">
-                    <div class="list-head">我的私信</div>
-                    <ul class="list">
-                        <!-- <li>
-                            <img src="img/friend-header.jpg" alt="" class="header">
-                            <div class="content">
-                                <div class="friend-name">知乎小伙伴</div>
-                                <div class="message">
-                                    亲爱的 拾柒：
-                                </div>
-                            </div>
-                        </li> -->
-                    </ul>
-                    <ul class="list-foot clearfix">
-                        <li class="fl">
-                            <i class="iconfont">&#xe50a;</i>
-                            <span>写新私信</span>
-                        </li>
-                        <li class="fr">
-                            <span>查看全部私信</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 点击我的头像 -->
-            <div class="head-menu">
-                <div class="goto-individual">
-                    <i class="iconfont">&#xe602;</i>
-                    <span>个人主页</span>
-                </div>
-                <div class="logout">
-                    <i class="iconfont">&#xe506;</i>
-                    <span>退出</span>
-                </div>
-            </div>
-
         </div>
 
         <div id="content" class="clearfix">
@@ -592,7 +590,104 @@
                 </div>
             </div>
         </div>
+
+        <!-- 回复框 -->
+        <div id="commentV2">
+            <div class="boxV2">
+
+                <div class="topbarV2 clearfix">
+                    查看对话
+                    <span class="close fr">
+                        <svg class="Zi Zi--Close Modal-closeIcon" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M13.486 12l5.208-5.207a1.048 1.048 0 0 0-.006-1.483 1.046 1.046 0 0 0-1.482-.005L12 10.514 6.793 5.305a1.048 1.048 0 0 0-1.483.005 1.046 1.046 0 0 0-.005 1.483L10.514 12l-5.208 5.207a1.048 1.048 0 0 0 .006 1.483 1.046 1.046 0 0 0 1.482.005L12 13.486l5.207 5.208a1.048 1.048 0 0 0 1.483-.006 1.046 1.046 0 0 0 .005-1.482L13.486 12z" fill-rule="evenodd"></path></svg>
+                    </span>
+                </div>
+
+                <div class="barV2">
+                    <div class="itemV2">
+
+                        <div class="itemTopV2 clearfix">
+                            <img src="img/head sulpture.jpg" alt="" class="avatarV2">
+                            <!-- 评论者的头像 -->
+                            <span class="authorV2"></span>
+                            <!-- 评论者id -->
+                            <div class="timeV2"></div>
+                            <!-- 时间 -->
+                        </div>
+                        <div class="innerV2">
+                            <div class="inner-textV2">
+                                <!-- 评论内容 -->
+                            </div>
+                            <ul class="footerV2">
+                                <li class="niceV2">
+                                    <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg></span>
+                                    <span class="nice-numV2"></span>
+                                    <!-- 点赞数 -->
+                                </li>
+                                <li class="badV2">
+                                    <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg></span>
+                                    <span class="bad-numV2">踩</span>
+                                    <!-- 点踩与否 -->
+                                </li>
+                                <li class="replyV2">
+                                    <span><svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg></span>
+                                    <span>回复</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-commentV2 clearfix">
+                            <input type="text" class="self-comment-textV2" placeholder="写下你的评论…">
+                            <button type="button" class="submit-commentV2">发布</button>
+                        </div>
+                    </div>
+
+                    <div class="gapV2"></div>
+                    <div class="numV2">
+                        <span class="num"></span>
+                        <span>条评论</span>
+                    </div>
+
+                    <div class="listV2">
+
+                        <!-- <div class="infoV2">
+                            <div class="innerTopV2 clearfix">
+                                <img src="img/1.jpg" alt="">
+                                <span>杀了你的马</span>
+                                <div class="timeV2">${index.time.slice(0,10)}</div>
+                            </div>
+                            <div class="innerV2">
+                                <div class="inner-textV2">
+                                    哈哈哈
+                                </div>
+                                <ul class="footerV2">
+                                    <li class="niceV2 ${index.liked && !index.disliked ? 'active' : ''}" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></path></svg></span>
+                                        <span>点赞</span>
+                                    </li>
+                                    <li class="badV2 ${index.disliked && !index.liked ? 'active' : ''}" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M14.445 9h5.387s2.997.154 1.95 3.669c-.168.51-2.346 6.911-2.346 6.911s-.763 1.416-2.86 1.416H8.989c-1.498 0-2.005-.896-1.989-2v-7.998c0-.987.336-2.032 1.114-2.639 4.45-3.773 3.436-4.597 4.45-5.83.985-1.13 3.2-.5 3.037 2.362C15.201 7.397 14.445 9 14.445 9zM3 9h2a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill-rule="evenodd"></path></svg></span>
+                                        <span>踩</span>
+                                    </li>
+                                    <li class="replyV2" id="${index.commentId}">
+                                        <span><svg class="Zi Zi--Reply" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 5px;"><path d="M22.959 17.22c-1.686-3.552-5.128-8.062-11.636-8.65-.539-.053-1.376-.436-1.376-1.561V4.678c0-.521-.635-.915-1.116-.521L1.469 10.67a1.506 1.506 0 0 0-.1 2.08s6.99 6.818 7.443 7.114c.453.295 1.136.124 1.135-.501V17a1.525 1.525 0 0 1 1.532-1.466c1.186-.139 7.597-.077 10.33 2.396 0 0 .396.257.536.257.892 0 .614-.967.614-.967z" fill-rule="evenodd"></path></svg></span>
+                                        <span>回复</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
     </div>
+
+
 
     <script src="js/home.js"></script>
 </body>

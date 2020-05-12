@@ -23,14 +23,10 @@
             sec_method.style.display = 'block';
             fir_method.style.display = 'none';
         }
-
     }
-
 })();
 
 /**
- * 
- * 
  * 下拉菜单
  */
 (function() {
@@ -54,41 +50,61 @@
 
 
 /**
- * 
  * 登录
  */
-
-var lg_btn = document.getElementById('submit');
-
-lg_btn.onclick = function() {
-    var data = {
-            username: document.getElementById('username').value,
-            password: document.getElementById('password').value,
-        }
-        //建立请求对象实例
-    var xhr = new XMLHttpRequest()
-
-    // xhr.open("POST", "http://47.97.204.234:3000/user/login", true);
-    // xhr.open("GET", "http://47.97.204.234:3000/user/state", true);
-    xhr.open("POST", "http://47.97.204.234:3000/user/logout", true);
-    xhr.withCredentials = true;
-
-    xhr.setRequestHeader("Content-type", "application/json"); //设置请求头
-
-    xhr.send(JSON.stringify(data));
-    //onreadystatechange，当服务器有响应的时候就会触发这个方法
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            //此时这个返回的数据是个字符串，需要调用JSON.parse方法把他转成js对象才能够操作
-            var returnData = JSON.parse(xhr.responseText)
-                //成功对应做成功的业务逻辑，x`失败对应做失败的业务逻辑
-            if (returnData.result === 'success') {
-                // document.getElementById('login-page').style.display = 'none';
-                // document.getElementById('home-page').style.display = 'block';
-                console.log(returnData);
-            } else {
-                alert('登陆失败，请重新尝试');
+(function() {
+    var lg_btn = document.getElementById('submit');
+    lg_btn.onclick = function() {
+        var data = {
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value,
+            }
+            //建立请求对象实例
+        var xhr = new XMLHttpRequest()
+        xhr.open("POST", "http://47.97.204.234:3000/user/login", true);
+        // xhr.open("POST", "http://47.97.204.234:3000/user/logout", true);
+        xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-type", "application/json"); //设置请求头
+        xhr.send(JSON.stringify(data));
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var returnData = JSON.parse(xhr.responseText)
+                if (returnData.result === 'success') {
+                    location.reload();
+                    document.getElementById('login-page').style.display = 'none';
+                    document.getElementById('home-page').style.display = 'block';
+                    console.log(returnData);
+                } else {
+                    alert('登陆失败，请重新尝试');
+                }
             }
         }
     }
-}
+})();
+
+/**
+ *检查登陆状态
+ */
+(function() {
+    var xhr = new XMLHttpRequest()
+    xhr.open("GET", "http://47.97.204.234:3000/user/state", true);
+    xhr.withCredentials = true;
+    xhr.send();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var returnData = JSON.parse(this.responseText);
+            if (returnData.result === 'success') {
+                console.log(returnData);
+                if (returnData.message === '目前处于登录状态') {
+                    setTimeout(function() {
+                        document.getElementById('home-page').style.display = 'block';
+                    }, 300)
+                    document.getElementById('login-page').style.display = 'none';
+                }
+            } else {
+                document.getElementById('login-page').style.display = 'block';
+                document.getElementById('home-page').style.display = 'none';
+            }
+        }
+    }
+})()

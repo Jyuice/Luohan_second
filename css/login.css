@@ -108,12 +108,16 @@ img.logo {
 .login-box form .pass button {
     border: none;
     outline: none;
-    border-bottom: 1px solid #ebebeb;
     background-color: #fff;
     color: #76839b;
     line-height: 48px;
     font-size: 14px;
     cursor: pointer;
+}
+
+.login-box form .number button {
+    vertical-align: top;
+    margin-top: -1px;
 }
 
 .login-box form .pass button {

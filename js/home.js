@@ -1,7 +1,8 @@
-var userId = '5e96e56f6dc8847e998b85f5';
+var userId = localStorage.getItem('userId');
 var scroll = document.getElementById("scroll");
 var bool = true; // bool表示当前是否在home
 localStorage.setItem('bool', bool);
+console.log(userId);
 
 window.onload = function() {
     var per = 0;
@@ -1839,6 +1840,10 @@ function handleCheckReplyDislike(niceReplyKeyV1, badReplyKeyV1) {
     }
 }
 
+var username = localStorage.getItem('username');
+var password = localStorage.getItem('password');
+console.log(username,password);
+
 /**
  * 退出登录
  *
@@ -1846,12 +1851,13 @@ function handleCheckReplyDislike(niceReplyKeyV1, badReplyKeyV1) {
  */
 function handleLogout() {
     var logoutBtn = document.getElementsByClassName('logout')[0];
+
     logoutBtn.onclick = function () {
         var xhr = new XMLHttpRequest();
         var URL = 'http://47.97.204.234:3000/user/logout';
         var params = {
-            username: 'lh',
-            password: '123',
+            username: username,
+            password: password,
         }
         xhr.open('POST', URL, true);
         xhr.withCredentials = true;

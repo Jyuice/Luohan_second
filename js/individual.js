@@ -1,5 +1,6 @@
 var bool = localStorage.getItem('bool');
-var userId = '5e96e56f6dc8847e998b85f5';
+var userId = localStorage.getItem('userId');
+console.log(userId);
 
 /**
  * 

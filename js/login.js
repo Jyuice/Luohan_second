@@ -48,6 +48,10 @@
     }
 })();
 
+var username;
+var password;
+var userId;
+
 
 /**
  * 登录
@@ -56,10 +60,15 @@
     var lg_btn = document.getElementById('submit');
     lg_btn.onclick = function() {
         var data = {
-                username: document.getElementById('username').value,
-                password: document.getElementById('password').value,
-            }
-            //建立请求对象实例
+            username: document.getElementById('username').value,
+            password: document.getElementById('password').value,
+        }
+
+        username = data.username;
+        password = data.password;
+        console.log(username, password);
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
         var xhr = new XMLHttpRequest()
         xhr.open("POST", "http://47.97.204.234:3000/user/login", true);
         // xhr.open("POST", "http://47.97.204.234:3000/user/logout", true);
@@ -69,11 +78,15 @@
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 var returnData = JSON.parse(xhr.responseText)
+                console.log(returnData);
+                userId = returnData.userId;
+                localStorage.setItem('userId', userId);
                 if (returnData.result === 'success') {
                     location.reload();
                     document.getElementById('login-page').style.display = 'none';
-                    document.getElementById('home-page').style.display = 'block';
-                    console.log(returnData);
+                    setTimeout(function() {
+                        document.getElementById('home-page').style.display = 'block';
+                    }, 300)
                 } else {
                     alert('登陆失败，请重新尝试');
                 }
@@ -93,12 +106,12 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             var returnData = JSON.parse(this.responseText);
+            console.log(returnData.userId);
+            userId = returnData.userId;
+            localStorage.setItem('userId', userId);
             if (returnData.result === 'success') {
-                console.log(returnData);
                 if (returnData.message === '目前处于登录状态') {
-                    setTimeout(function() {
-                        document.getElementById('home-page').style.display = 'block';
-                    }, 300)
+                    document.getElementById('home-page').style.display = 'block';
                     document.getElementById('login-page').style.display = 'none';
                 }
             } else {
